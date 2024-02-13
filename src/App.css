@@ -1,0 +1,8 @@
+html, body{
+    justify-content:center;
+    align-content: center;
+    background: url(./3september.png);
+    background-size: cover;
+    display: flex;
+    background-color: antiquewhite;
+}

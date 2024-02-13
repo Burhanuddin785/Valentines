@@ -1,0 +1,335 @@
+.container{
+    position: fixed;
+    justify-content: center;
+    display: flex;
+    top: 0;
+    align-items: center;
+    left:0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(../../assets/valentines.png);
+    background-size: cover;
+}
+
+.heartOpen{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 80px ;
+    z-index: 4;
+    height: 400px;
+    width: 400px;
+    background: url(../../assets/heartOpen-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.heartClose{
+    position: absolute;
+    margin-top: 80px ;
+    z-index: 8;
+    height: 418px;
+    width: 410px;
+    background: url(../../assets/heartClosed-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /*  */
+}
+
+.heartClose.dropped{
+    
+    animation: drop 4s forwards;
+    
+}
+
+@keyframes drop{
+    0%{
+        transform: translateX(0%) translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0%) translateY(100vh);
+        opacity: 1;
+    }
+}
+
+.letter{
+    height: 288px;
+    width: 198px;
+    background: url(../../assets/Brown_Beige_Green_Aesthetic_Scrapbook_Thank_You_Letter-removebg-preview.png);
+    background-size: cover;
+    transition: 2s ease;
+}
+.letter:hover{
+    transform: scale(1.9) translateY(-3vh);
+}
+
+.shootingstar{
+    z-index: 12;
+    position: absolute;
+    background: #fff;
+    display: flex;
+    border-radius: 12px;
+    width: 150px;
+    height: 1px;
+    border-width: 30px;
+    border-color: aliceblue;
+    transform: rotate(-40deg);
+    margin-top: 70px;
+    margin-left: -1400px;
+    padding: 0;
+    animation: shoot 3s infinite;
+
+}
+
+@keyframes shoot{
+    0%{
+        transform: translateX(0%) translateY(0%) rotate(-40deg) ;
+    }
+    100%{
+        transform: translateX(110vh) translateY(-100vh) rotate(-40deg);
+    }
+}
+.shootingstar2{
+    z-index: 1;
+    position: absolute;
+    background: #fff;
+    display: flex;
+    border-radius: 12px;
+    width: 150px;
+    height: 1px;
+    border-width: 30px;
+    border-color: aliceblue;
+    transform: rotate(-40deg);
+    margin-top: 700px;
+    margin-left: -700px;
+    padding: 0;
+    animation: shoot2 2s infinite;
+    animation-delay: 5s;
+
+}
+
+@keyframes shoot2{
+    0%{
+        transform: translateX(0%) translateY(0%) rotate(-40deg) ;
+    }
+    100%{
+        transform: translateX(150vh) translateY(-130vh) rotate(-40deg);
+    }
+}
+
+.box1{
+    position: absolute;
+    z-index: 5;
+    text-align: center;
+    background:beige;
+    /* background: url(../../assets/favicon-16x16.png); */
+    margin-top: 300px;
+    margin-left: 50px;
+    height: 250px;
+    width: 200px;
+    padding: 0;
+    transform: rotate(-10deg );
+    transition: 2s ease;
+    animation: appear 4s;
+}
+.band{
+     
+    background: url(../../assets/favicon-16x16.png);
+    background-position: center;
+    padding: 10px;
+}
+.image1{
+    margin: 15px;
+    margin-bottom: 10px;
+    height: 170px;
+    width: 170px;
+    background: url(../../assets/image1.jpg);
+    background-size: cover;
+
+}
+.text{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    font-family: emoji;
+    color: #f312e8;
+    /* font-size: larger; */
+    margin-top: -350px;
+}
+.box2{
+    position: absolute;
+    z-index: 6;
+    background:beige;
+    /* background: url(../../assets/favicon-16x16.png); */
+    margin-top: 270px;
+    margin-left: 1000px;
+    text-align: center;
+    height: 250px;
+    width: 200px;
+    padding: 0;
+    transform: rotate(10deg );
+    transition: 2s ease;
+    animation: appear 4s;
+}
+.image2{
+    margin: 15px;
+    height: 170px;
+    width: 170px;
+    margin-bottom: 10px;
+    background: url(../../assets/image3.jpg);
+    background-size: cover;
+
+}
+.box3{
+    position: absolute;
+    z-index: 7;
+    text-align: center;
+    font-size: 8px;
+    background:beige;
+    /* background: url(../../assets/favicon-16x16.png); */
+    margin-top: 80px;
+    margin-left: 950px;
+    height: 200px;
+    width: 150px;
+    padding: 0;
+    transform: rotate(-3deg );
+    transition: 2s ease;
+    animation: appear 4s;
+}
+.image3{
+    margin: 13px;
+    margin-bottom: 6px;
+    height: 70%;
+    width: 83%;
+    background: url(../../assets/image4.jpg);
+    background-size: cover;
+
+}
+.box4{
+    position: absolute;
+    z-index: 8;
+    background:beige;
+    text-align: center;
+    font-size: 8px;
+    /* background: url(../../assets/favicon-16x16.png); */
+    margin-top: 230px;
+    margin-left: 850px;
+    height: 200px;
+    text-align: center;
+    width: 150px;
+    padding: 0;
+    transform: rotate(-6deg );
+    transition: 2s ease;
+    animation: appear 4s;
+}
+.image4{
+    margin: 13px;
+    margin-bottom: 6px;
+    height: 70%;
+    width: 83%;
+    background: url(../../assets/image5.jpg);
+    background-size: cover;
+
+}
+.box5{
+    position: absolute;
+    z-index: 8;
+    background:beige;
+    text-align: center;
+    font-size: 8px;
+    /* background: url(../../assets/favicon-16x16.png); */
+    margin-top: 150px;
+    text-align: center;
+    margin-left: 200px;
+    height: 200px;
+    width: 150px;
+    padding: 0;
+    transform: rotate(4deg );
+    transition: 2s ease;
+    animation: appear 4s;
+}
+.image5{
+    margin: 13px;
+    margin-bottom: 6px ;
+    height: 70%;
+    width: 83%;
+    background: url(../../assets/1stEver.jpg);
+    background-size: cover;
+
+}
+
+.box6{
+    position: absolute;
+    z-index: 7;
+    background:beige;
+    text-align: center;
+    font-size: 8px;
+    /* background: url(../../assets/favicon-16x16.png); */
+    margin-top: 310px;
+    text-align: center;
+    margin-left: 255px;
+    height: 200px;
+    width: 150px;
+    padding: 0;
+    transform: rotate(6deg );
+    transition: 2s ease;
+    animation: appear 4s;
+}
+.image6{
+    margin: 13px;
+    margin-bottom: 6px ;
+    height: 70%;
+    width: 83%;
+    background: url(../../assets/image6.jpg);
+    background-size: cover;
+    
+}
+
+.box1:hover{
+    transform: scale(2.2)  translateX(35vh) translateY(-10vh);
+    z-index: 10;
+    
+}
+.box2:hover{
+    transform: scale(2.2)  translateX(-30vh) translateY(-8vh);
+    z-index: 10;
+    
+}
+.box3:hover{
+    transform: scale(2.2)  translateX(-30vh) translateY(8vh);
+    z-index: 10;
+    
+}
+.box4:hover{
+    transform: scale(2.2)  translateX(-20vh) translateY(0vh);
+    z-index: 10;
+    
+}
+.box5:hover{
+    transform: scale(2.2)  translateX(25vh) translateY(4vh);
+    z-index: 10;
+    
+}
+.box6:hover{
+    transform: scale(2.2)  translateX(23vh) translateY(-10vh);
+    z-index: 10;
+    
+}
+
+@keyframes appear {
+    0%{
+        
+        opacity: 0;
+    }
+    100%{
+       
+        opacity: 1;
+    }
+}
